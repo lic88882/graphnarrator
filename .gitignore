@@ -1,0 +1,11 @@
+# Dataset directory
+dataset/
+
+# Checkpoint directory
+checkpoint/
+
+# Logs directory
+logs/
+
+# Outputs files
+outputs/pkls/
