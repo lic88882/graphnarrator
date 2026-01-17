@@ -287,6 +287,17 @@ class FreeTextExpGenerator:
 
         prompt = self.template.format(label=label, document=document, example_verbalized_graph=self.example)
 
+        if not use_finetuned:
+            assert model is not None, "model is required when not using finetuned model"
+            # Use Qwen model via _generate method
+            response = self._generate(prompt, max_tokens=1024)
+            return prompt, response
+
+        else:
+            # Use finetuned distilled model
+            from distill import LLMFinetuner
+            finetuner = LLMFinetuner(model_name=model)
+
         messages = [
             {
                 "role": "system",
@@ -297,14 +308,7 @@ class FreeTextExpGenerator:
 
         if not use_finetuned:
             assert model is not None, "model is required when not using finetuned model"
-            # Call OpenAI GPT API
-            completion = self.client.chat.completions.create(
-                model=model,
-                temperature=0.3,
-                top_p=0.95,
-                max_tokens=4095,
-                messages=messages,
-            )
+            # Use Qwen model via _generate method
             response = self._generate(prompt, max_tokens=1024)
             return prompt, response
 
@@ -313,6 +317,13 @@ class FreeTextExpGenerator:
             from distill import LLMFinetuner
 
             finetuner = LLMFinetuner(model_name=model)
+            messages = [
+                {
+                    "role": "system",
+                    "content": "You are a helpful, reliable and responsible AI assistant.",
+                },
+                {"role": "user", "content": prompt},
+            ]
             response = finetuner.inference(messages)
             return prompt, response
 

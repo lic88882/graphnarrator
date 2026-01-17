@@ -12653,3 +12653,406 @@
 2026-01-11 19:07:58,816 - preprocess.py:295 - log - INFO - batch-2497 prepared. Time: 0.29s
 2026-01-11 19:08:02,562 - preprocess.py:295 - log - INFO - batch-2498 prepared. Time: 3.75s
 2026-01-11 19:08:03,582 - preprocess.py:295 - log - INFO - batch-2499 prepared. Time: 1.02s
+2026-01-17 21:44:23,066 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/15.pkl does not exists!
+2026-01-17 21:44:23,069 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/47.pkl does not exists!
+2026-01-17 21:44:23,085 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/9.pkl does not exists!
+2026-01-17 21:44:23,090 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/0.pkl does not exists!
+2026-01-17 21:44:23,146 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/27.pkl does not exists!
+2026-01-17 21:44:23,147 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/59.pkl does not exists!
+2026-01-17 21:44:23,147 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/29.pkl does not exists!
+2026-01-17 21:44:23,147 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/61.pkl does not exists!
+2026-01-17 21:44:23,579 - free_text_explanation.py:348 - log - ERROR - stringify graph-41 failed! Error: [Errno 17] File exists: '/home/cli/nltk_data/corpora/stopwords'
+2026-01-17 21:44:23,579 - free_text_explanation.py:348 - log - ERROR - stringify graph-79 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,579 - free_text_explanation.py:348 - log - ERROR - stringify graph-28 failed! Error: [Errno 17] File exists: '/home/cli/nltk_data/corpora/stopwords'
+2026-01-17 21:44:23,579 - free_text_explanation.py:348 - log - ERROR - stringify graph-22 failed! Error: [Errno 17] File exists: '/home/cli/nltk_data/corpora/stopwords'
+2026-01-17 21:44:23,580 - free_text_explanation.py:348 - log - ERROR - stringify graph-26 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,581 - free_text_explanation.py:348 - log - ERROR - stringify graph-111 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,582 - free_text_explanation.py:348 - log - ERROR - stringify graph-143 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,583 - free_text_explanation.py:348 - log - ERROR - stringify graph-175 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,583 - free_text_explanation.py:348 - log - ERROR - stringify graph-73 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,583 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/207.pkl does not exists!
+2026-01-17 21:44:23,583 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/239.pkl does not exists!
+2026-01-17 21:44:23,583 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/105.pkl does not exists!
+2026-01-17 21:44:23,583 - free_text_explanation.py:348 - log - ERROR - stringify graph-60 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,583 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/92.pkl does not exists!
+2026-01-17 21:44:23,583 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/124.pkl does not exists!
+2026-01-17 21:44:23,583 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/156.pkl does not exists!
+2026-01-17 21:44:23,583 - free_text_explanation.py:348 - log - ERROR - stringify graph-58 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,584 - free_text_explanation.py:348 - log - ERROR - stringify graph-137 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,585 - free_text_explanation.py:348 - log - ERROR - stringify graph-54 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,585 - free_text_explanation.py:348 - log - ERROR - stringify graph-90 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,585 - free_text_explanation.py:348 - log - ERROR - stringify graph-188 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,585 - free_text_explanation.py:348 - log - ERROR - stringify graph-271 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,585 - free_text_explanation.py:348 - log - ERROR - stringify graph-14 failed! Error: Truncated file header
+2026-01-17 21:44:23,586 - free_text_explanation.py:348 - log - ERROR - stringify graph-12 failed! Error: Bad CRC-32 for file 'stopwords/slovene'
+2026-01-17 21:44:23,586 - free_text_explanation.py:348 - log - ERROR - stringify graph-7 failed! Error: Bad CRC-32 for file 'stopwords/kazakh'
+2026-01-17 21:44:23,586 - free_text_explanation.py:348 - log - ERROR - stringify graph-169 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,586 - free_text_explanation.py:348 - log - ERROR - stringify graph-32 failed! Error: Bad CRC-32 for file 'stopwords/slovene'
+2026-01-17 21:44:23,586 - free_text_explanation.py:348 - log - ERROR - stringify graph-19 failed! Error: Bad CRC-32 for file 'stopwords/slovene'
+2026-01-17 21:44:23,587 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/51.pkl does not exists!
+2026-01-17 21:44:23,587 - free_text_explanation.py:348 - log - ERROR - stringify graph-46 failed! Error: 
+2026-01-17 21:44:23,587 - free_text_explanation.py:348 - log - ERROR - stringify graph-11 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,587 - free_text_explanation.py:348 - log - ERROR - stringify graph-86 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,587 - free_text_explanation.py:348 - log - ERROR - stringify graph-220 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,587 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/118.pkl does not exists!
+2026-01-17 21:44:23,587 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/252.pkl does not exists!
+2026-01-17 21:44:23,589 - free_text_explanation.py:348 - log - ERROR - stringify graph-284 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,589 - free_text_explanation.py:348 - log - ERROR - stringify graph-83 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,589 - free_text_explanation.py:348 - log - ERROR - stringify graph-122 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,589 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/154.pkl does not exists!
+2026-01-17 21:44:23,590 - free_text_explanation.py:348 - log - ERROR - stringify graph-78 failed! Error: 
+2026-01-17 21:44:23,590 - free_text_explanation.py:348 - log - ERROR - stringify graph-303 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,591 - free_text_explanation.py:348 - log - ERROR - stringify graph-201 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,591 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/335.pkl does not exists!
+2026-01-17 21:44:23,591 - free_text_explanation.py:348 - log - ERROR - stringify graph-44 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,591 - free_text_explanation.py:348 - log - ERROR - stringify graph-316 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,591 - free_text_explanation.py:348 - log - ERROR - stringify graph-39 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,591 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/76.pkl does not exists!
+2026-01-17 21:44:23,591 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/233.pkl does not exists!
+2026-01-17 21:44:23,591 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/348.pkl does not exists!
+2026-01-17 21:44:23,591 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/380.pkl does not exists!
+2026-01-17 21:44:23,591 - free_text_explanation.py:348 - log - ERROR - stringify graph-110 failed! Error: 
+2026-01-17 21:44:23,592 - free_text_explanation.py:348 - log - ERROR - stringify graph-64 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,592 - free_text_explanation.py:348 - log - ERROR - stringify graph-265 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,593 - free_text_explanation.py:348 - log - ERROR - stringify graph-150 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,593 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/182.pkl does not exists!
+2026-01-17 21:44:23,593 - free_text_explanation.py:348 - log - ERROR - stringify graph-115 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,593 - free_text_explanation.py:348 - log - ERROR - stringify graph-412 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,593 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/444.pkl does not exists!
+2026-01-17 21:44:23,594 - free_text_explanation.py:348 - log - ERROR - stringify graph-186 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,594 - free_text_explanation.py:348 - log - ERROR - stringify graph-96 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,594 - free_text_explanation.py:348 - log - ERROR - stringify graph-142 failed! Error: 
+2026-01-17 21:44:23,594 - free_text_explanation.py:348 - log - ERROR - stringify graph-147 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,594 - free_text_explanation.py:348 - log - ERROR - stringify graph-214 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,594 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/179.pkl does not exists!
+2026-01-17 21:44:23,594 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/246.pkl does not exists!
+2026-01-17 21:44:23,595 - free_text_explanation.py:348 - log - ERROR - stringify graph-367 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,595 - free_text_explanation.py:348 - log - ERROR - stringify graph-108 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,595 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/399.pkl does not exists!
+2026-01-17 21:44:23,595 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/431.pkl does not exists!
+2026-01-17 21:44:23,595 - free_text_explanation.py:348 - log - ERROR - stringify graph-43 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,595 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/75.pkl does not exists!
+2026-01-17 21:44:23,596 - free_text_explanation.py:348 - log - ERROR - stringify graph-71 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,596 - free_text_explanation.py:348 - log - ERROR - stringify graph-297 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,596 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/103.pkl does not exists!
+2026-01-17 21:44:23,596 - free_text_explanation.py:348 - log - ERROR - stringify graph-476 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,596 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/508.pkl does not exists!
+2026-01-17 21:44:23,597 - free_text_explanation.py:348 - log - ERROR - stringify graph-140 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,597 - free_text_explanation.py:348 - log - ERROR - stringify graph-25 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,597 - free_text_explanation.py:348 - log - ERROR - stringify graph-174 failed! Error: 
+2026-01-17 21:44:23,598 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/57.pkl does not exists!
+2026-01-17 21:44:23,598 - free_text_explanation.py:348 - log - ERROR - stringify graph-218 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,598 - free_text_explanation.py:348 - log - ERROR - stringify graph-128 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,598 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/250.pkl does not exists!
+2026-01-17 21:44:23,598 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/282.pkl does not exists!
+2026-01-17 21:44:23,599 - free_text_explanation.py:348 - log - ERROR - stringify graph-20 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,599 - free_text_explanation.py:348 - log - ERROR - stringify graph-206 failed! Error: 
+2026-01-17 21:44:23,599 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/238.pkl does not exists!
+2026-01-17 21:44:23,599 - free_text_explanation.py:348 - log - ERROR - stringify graph-211 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,599 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/270.pkl does not exists!
+2026-01-17 21:44:23,599 - free_text_explanation.py:348 - log - ERROR - stringify graph-135 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,599 - free_text_explanation.py:348 - log - ERROR - stringify graph-278 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,600 - free_text_explanation.py:348 - log - ERROR - stringify graph-463 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,600 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/310.pkl does not exists!
+2026-01-17 21:44:23,600 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/495.pkl does not exists!
+2026-01-17 21:44:23,601 - free_text_explanation.py:348 - log - ERROR - stringify graph-172 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,601 - free_text_explanation.py:348 - log - ERROR - stringify graph-107 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,601 - free_text_explanation.py:348 - log - ERROR - stringify graph-540 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,601 - free_text_explanation.py:348 - log - ERROR - stringify graph-52 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,601 - free_text_explanation.py:348 - log - ERROR - stringify graph-302 failed! Error: 
+2026-01-17 21:44:23,602 - free_text_explanation.py:348 - log - ERROR - stringify graph-314 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,603 - free_text_explanation.py:348 - log - ERROR - stringify graph-329 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,603 - free_text_explanation.py:348 - log - ERROR - stringify graph-167 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,603 - free_text_explanation.py:348 - log - ERROR - stringify graph-204 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,603 - free_text_explanation.py:348 - log - ERROR - stringify graph-89 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,604 - free_text_explanation.py:348 - log - ERROR - stringify graph-527 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,604 - free_text_explanation.py:348 - log - ERROR - stringify graph-160 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,604 - free_text_explanation.py:348 - log - ERROR - stringify graph-342 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,605 - free_text_explanation.py:348 - log - ERROR - stringify graph-139 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,605 - free_text_explanation.py:348 - log - ERROR - stringify graph-572 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,606 - free_text_explanation.py:348 - log - ERROR - stringify graph-346 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,606 - free_text_explanation.py:348 - log - ERROR - stringify graph-243 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,606 - free_text_explanation.py:348 - log - ERROR - stringify graph-199 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,606 - free_text_explanation.py:348 - log - ERROR - stringify graph-236 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,606 - free_text_explanation.py:348 - log - ERROR - stringify graph-374 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,606 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/231.pkl does not exists!
+2026-01-17 21:44:23,606 - free_text_explanation.py:348 - log - ERROR - stringify graph-334 failed! Error: 
+2026-01-17 21:44:23,606 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/366.pkl does not exists!
+2026-01-17 21:44:23,606 - free_text_explanation.py:348 - log - ERROR - stringify graph-23 failed! Error: Truncated file header
+2026-01-17 21:44:23,607 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/398.pkl does not exists!
+2026-01-17 21:44:23,607 - free_text_explanation.py:348 - log - ERROR - stringify graph-121 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,607 - free_text_explanation.py:348 - log - ERROR - stringify graph-84 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,607 - free_text_explanation.py:348 - log - ERROR - stringify graph-268 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,607 - free_text_explanation.py:348 - log - ERROR - stringify graph-604 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,608 - free_text_explanation.py:348 - log - ERROR - stringify graph-192 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,608 - free_text_explanation.py:348 - log - ERROR - stringify graph-171 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,609 - free_text_explanation.py:348 - log - ERROR - stringify graph-559 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,609 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/591.pkl does not exists!
+2026-01-17 21:44:23,609 - free_text_explanation.py:348 - log - ERROR - stringify graph-378 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,609 - free_text_explanation.py:348 - log - ERROR - stringify graph-300 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,609 - free_text_explanation.py:348 - log - ERROR - stringify graph-55 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,609 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/410.pkl does not exists!
+2026-01-17 21:44:23,610 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/442.pkl does not exists!
+2026-01-17 21:44:23,610 - free_text_explanation.py:348 - log - ERROR - stringify graph-361 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,610 - free_text_explanation.py:348 - log - ERROR - stringify graph-406 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,610 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/438.pkl does not exists!
+2026-01-17 21:44:23,610 - free_text_explanation.py:348 - log - ERROR - stringify graph-430 failed! Error: 
+2026-01-17 21:44:23,610 - free_text_explanation.py:348 - log - ERROR - stringify graph-636 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,610 - free_text_explanation.py:348 - log - ERROR - stringify graph-153 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,610 - free_text_explanation.py:348 - log - ERROR - stringify graph-263 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,611 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/185.pkl does not exists!
+2026-01-17 21:44:23,611 - free_text_explanation.py:348 - log - ERROR - stringify graph-224 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,611 - free_text_explanation.py:348 - log - ERROR - stringify graph-3 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,611 - free_text_explanation.py:348 - log - ERROR - stringify graph-116 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,611 - free_text_explanation.py:348 - log - ERROR - stringify graph-275 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,611 - free_text_explanation.py:348 - log - ERROR - stringify graph-470 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,611 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/148.pkl does not exists!
+2026-01-17 21:44:23,611 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/307.pkl does not exists!
+2026-01-17 21:44:23,611 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/180.pkl does not exists!
+2026-01-17 21:44:23,611 - free_text_explanation.py:348 - log - ERROR - stringify graph-203 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,612 - free_text_explanation.py:348 - log - ERROR - stringify graph-332 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,612 - free_text_explanation.py:348 - log - ERROR - stringify graph-217 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,612 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/364.pkl does not exists!
+2026-01-17 21:44:23,613 - free_text_explanation.py:348 - log - ERROR - stringify graph-474 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,613 - free_text_explanation.py:348 - log - ERROR - stringify graph-256 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,613 - free_text_explanation.py:348 - log - ERROR - stringify graph-295 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,613 - free_text_explanation.py:348 - log - ERROR - stringify graph-462 failed! Error: 
+2026-01-17 21:44:23,614 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/494.pkl does not exists!
+2026-01-17 21:44:23,614 - free_text_explanation.py:348 - log - ERROR - stringify graph-623 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,614 - free_text_explanation.py:348 - log - ERROR - stringify graph-393 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,614 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/425.pkl does not exists!
+2026-01-17 21:44:23,614 - free_text_explanation.py:348 - log - ERROR - stringify graph-35 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,615 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/67.pkl does not exists!
+2026-01-17 21:44:23,616 - free_text_explanation.py:348 - log - ERROR - stringify graph-87 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,616 - free_text_explanation.py:348 - log - ERROR - stringify graph-668 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,616 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/700.pkl does not exists!
+2026-01-17 21:44:23,616 - free_text_explanation.py:348 - log - ERROR - stringify graph-235 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,616 - free_text_explanation.py:348 - log - ERROR - stringify graph-339 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,616 - free_text_explanation.py:348 - log - ERROR - stringify graph-99 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,617 - free_text_explanation.py:348 - log - ERROR - stringify graph-16 failed! Error: Bad CRC-32 for file 'stopwords/slovene'
+2026-01-17 21:44:23,617 - free_text_explanation.py:348 - log - ERROR - stringify graph-396 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,617 - free_text_explanation.py:348 - log - ERROR - stringify graph-502 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,617 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/534.pkl does not exists!
+2026-01-17 21:44:23,618 - free_text_explanation.py:348 - log - ERROR - stringify graph-327 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,618 - free_text_explanation.py:348 - log - ERROR - stringify graph-212 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,618 - free_text_explanation.py:348 - log - ERROR - stringify graph-288 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,618 - free_text_explanation.py:348 - log - ERROR - stringify graph-13 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,618 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/45.pkl does not exists!
+2026-01-17 21:44:23,618 - free_text_explanation.py:348 - log - ERROR - stringify graph-655 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,618 - free_text_explanation.py:348 - log - ERROR - stringify graph-526 failed! Error: 
+2026-01-17 21:44:23,619 - free_text_explanation.py:348 - log - ERROR - stringify graph-506 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,619 - free_text_explanation.py:348 - log - ERROR - stringify graph-249 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,619 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/281.pkl does not exists!
+2026-01-17 21:44:23,619 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/313.pkl does not exists!
+2026-01-17 21:44:23,619 - free_text_explanation.py:348 - log - ERROR - stringify graph-91 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,619 - free_text_explanation.py:348 - log - ERROR - stringify graph-244 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,619 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/123.pkl does not exists!
+2026-01-17 21:44:23,619 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/155.pkl does not exists!
+2026-01-17 21:44:23,620 - free_text_explanation.py:348 - log - ERROR - stringify graph-119 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,620 - free_text_explanation.py:348 - log - ERROR - stringify graph-8 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,620 - free_text_explanation.py:348 - log - ERROR - stringify graph-18 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,620 - free_text_explanation.py:348 - log - ERROR - stringify graph-457 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,620 - free_text_explanation.py:348 - log - ERROR - stringify graph-359 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,620 - free_text_explanation.py:348 - log - ERROR - stringify graph-428 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,621 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/391.pkl does not exists!
+2026-01-17 21:44:23,621 - free_text_explanation.py:348 - log - ERROR - stringify graph-320 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,621 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/423.pkl does not exists!
+2026-01-17 21:44:23,621 - free_text_explanation.py:348 - log - ERROR - stringify graph-566 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,621 - free_text_explanation.py:348 - log - ERROR - stringify graph-371 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,621 - free_text_explanation.py:348 - log - ERROR - stringify graph-538 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,622 - free_text_explanation.py:348 - log - ERROR - stringify graph-687 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,622 - free_text_explanation.py:348 - log - ERROR - stringify graph-131 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,622 - free_text_explanation.py:348 - log - ERROR - stringify graph-558 failed! Error: 
+2026-01-17 21:44:23,622 - free_text_explanation.py:348 - log - ERROR - stringify graph-48 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,622 - free_text_explanation.py:348 - log - ERROR - stringify graph-455 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,622 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/487.pkl does not exists!
+2026-01-17 21:44:23,623 - free_text_explanation.py:348 - log - ERROR - stringify graph-267 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,623 - free_text_explanation.py:348 - log - ERROR - stringify graph-77 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,623 - free_text_explanation.py:348 - log - ERROR - stringify graph-732 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,624 - free_text_explanation.py:348 - log - ERROR - stringify graph-151 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,624 - free_text_explanation.py:348 - log - ERROR - stringify graph-50 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,624 - free_text_explanation.py:348 - log - ERROR - stringify graph-352 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,624 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/82.pkl does not exists!
+2026-01-17 21:44:23,625 - free_text_explanation.py:348 - log - ERROR - stringify graph-187 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,625 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/384.pkl does not exists!
+2026-01-17 21:44:23,625 - free_text_explanation.py:348 - log - ERROR - stringify graph-163 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,625 - free_text_explanation.py:348 - log - ERROR - stringify graph-345 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,625 - free_text_explanation.py:348 - log - ERROR - stringify graph-519 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,625 - free_text_explanation.py:348 - log - ERROR - stringify graph-489 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,625 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/521.pkl does not exists!
+2026-01-17 21:44:23,626 - free_text_explanation.py:348 - log - ERROR - stringify graph-598 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,626 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/553.pkl does not exists!
+2026-01-17 21:44:23,626 - free_text_explanation.py:348 - log - ERROR - stringify graph-403 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,626 - free_text_explanation.py:348 - log - ERROR - stringify graph-40 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,627 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/435.pkl does not exists!
+2026-01-17 21:44:23,627 - free_text_explanation.py:348 - log - ERROR - stringify graph-460 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,627 - free_text_explanation.py:348 - log - ERROR - stringify graph-183 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,627 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/492.pkl does not exists!
+2026-01-17 21:44:23,627 - free_text_explanation.py:348 - log - ERROR - stringify graph-80 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,627 - free_text_explanation.py:348 - log - ERROR - stringify graph-764 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,627 - free_text_explanation.py:348 - log - ERROR - stringify graph-276 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,627 - free_text_explanation.py:348 - log - ERROR - stringify graph-109 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,627 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/796.pkl does not exists!
+2026-01-17 21:44:23,628 - free_text_explanation.py:348 - log - ERROR - stringify graph-630 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,628 - free_text_explanation.py:348 - log - ERROR - stringify graph-570 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,628 - free_text_explanation.py:348 - log - ERROR - stringify graph-299 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,628 - free_text_explanation.py:348 - log - ERROR - stringify graph-215 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-416 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-112 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/144.pkl does not exists!
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-195 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-377 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-551 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-114 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-719 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-308 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,629 - free_text_explanation.py:348 - log - ERROR - stringify graph-1 failed! Error: 
+2026-01-17 21:44:23,630 - free_text_explanation.py:348 - log - ERROR - stringify graph-590 failed! Error: 
+2026-01-17 21:44:23,630 - free_text_explanation.py:348 - log - ERROR - stringify graph-6 failed! Error: 
+2026-01-17 21:44:23,630 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/622.pkl does not exists!
+2026-01-17 21:44:23,630 - free_text_explanation.py:348 - log - ERROR - stringify graph-219 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,630 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/38.pkl does not exists!
+2026-01-17 21:44:23,630 - free_text_explanation.py:348 - log - ERROR - stringify graph-524 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,630 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/556.pkl does not exists!
+2026-01-17 21:44:23,630 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/588.pkl does not exists!
+2026-01-17 21:44:23,630 - free_text_explanation.py:348 - log - ERROR - stringify graph-17 failed! Error: 
+2026-01-17 21:44:23,631 - free_text_explanation.py:348 - log - ERROR - stringify graph-247 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,631 - free_text_explanation.py:348 - log - ERROR - stringify graph-72 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,631 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/49.pkl does not exists!
+2026-01-17 21:44:23,631 - free_text_explanation.py:348 - log - ERROR - stringify graph-467 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,631 - free_text_explanation.py:348 - log - ERROR - stringify graph-448 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,632 - free_text_explanation.py:348 - log - ERROR - stringify graph-141 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,632 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/173.pkl does not exists!
+2026-01-17 21:44:23,632 - free_text_explanation.py:348 - log - ERROR - stringify graph-146 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,632 - free_text_explanation.py:348 - log - ERROR - stringify graph-662 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,632 - free_text_explanation.py:348 - log - ERROR - stringify graph-654 failed! Error: 
+2026-01-17 21:44:23,632 - free_text_explanation.py:348 - log - ERROR - stringify graph-251 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,632 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/694.pkl does not exists!
+2026-01-17 21:44:23,633 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/686.pkl does not exists!
+2026-01-17 21:44:23,633 - free_text_explanation.py:348 - log - ERROR - stringify graph-828 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,633 - free_text_explanation.py:348 - log - ERROR - stringify graph-331 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,634 - free_text_explanation.py:348 - log - ERROR - stringify graph-585 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,635 - free_text_explanation.py:348 - log - ERROR - stringify graph-409 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,635 - free_text_explanation.py:348 - log - ERROR - stringify graph-751 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,635 - free_text_explanation.py:348 - log - ERROR - stringify graph-70 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,635 - free_text_explanation.py:348 - log - ERROR - stringify graph-583 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,635 - free_text_explanation.py:348 - log - ERROR - stringify graph-340 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,636 - free_text_explanation.py:348 - log - ERROR - stringify graph-602 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,636 - free_text_explanation.py:348 - log - ERROR - stringify graph-363 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,636 - free_text_explanation.py:348 - log - ERROR - stringify graph-620 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,636 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/395.pkl does not exists!
+2026-01-17 21:44:23,638 - free_text_explanation.py:348 - log - ERROR - stringify graph-178 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,638 - free_text_explanation.py:348 - log - ERROR - stringify graph-860 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,642 - free_text_explanation.py:348 - log - ERROR - stringify graph-718 failed! Error: 
+2026-01-17 21:44:23,642 - free_text_explanation.py:348 - log - ERROR - stringify graph-634 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,639 - free_text_explanation.py:348 - log - ERROR - stringify graph-615 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,639 - free_text_explanation.py:348 - log - ERROR - stringify graph-210 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,639 - free_text_explanation.py:348 - log - ERROR - stringify graph-279 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,640 - free_text_explanation.py:348 - log - ERROR - stringify graph-81 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,641 - free_text_explanation.py:348 - log - ERROR - stringify graph-283 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,640 - free_text_explanation.py:348 - log - ERROR - stringify graph-33 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,641 - free_text_explanation.py:348 - log - ERROR - stringify graph-104 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,641 - free_text_explanation.py:348 - log - ERROR - stringify graph-617 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,640 - free_text_explanation.py:348 - log - ERROR - stringify graph-783 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,642 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/647.pkl does not exists!
+2026-01-17 21:44:23,641 - free_text_explanation.py:348 - log - ERROR - stringify graph-480 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,642 - free_text_explanation.py:348 - log - ERROR - stringify graph-176 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,643 - free_text_explanation.py:348 - log - ERROR - stringify graph-499 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,643 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/208.pkl does not exists!
+2026-01-17 21:44:23,643 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/512.pkl does not exists!
+2026-01-17 21:44:23,643 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/544.pkl does not exists!
+2026-01-17 21:44:23,643 - free_text_explanation.py:348 - log - ERROR - stringify graph-726 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,643 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/758.pkl does not exists!
+2026-01-17 21:44:23,643 - free_text_explanation.py:348 - log - ERROR - stringify graph-652 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,644 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/790.pkl does not exists!
+2026-01-17 21:44:23,643 - free_text_explanation.py:348 - log - ERROR - stringify graph-205 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,643 - free_text_explanation.py:348 - log - ERROR - stringify graph-441 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,644 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/684.pkl does not exists!
+2026-01-17 21:44:23,644 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/822.pkl does not exists!
+2026-01-17 21:44:23,644 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/473.pkl does not exists!
+2026-01-17 21:44:23,644 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/716.pkl does not exists!
+2026-01-17 21:44:23,644 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/748.pkl does not exists!
+2026-01-17 21:44:23,644 - free_text_explanation.py:348 - log - ERROR - stringify graph-227 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,644 - free_text_explanation.py:348 - log - ERROR - stringify graph-102 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,644 - free_text_explanation.py:348 - log - ERROR - stringify graph-372 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,645 - free_text_explanation.py:348 - log - ERROR - stringify graph-113 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,645 - free_text_explanation.py:348 - log - ERROR - stringify graph-240 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,645 - free_text_explanation.py:348 - log - ERROR - stringify graph-427 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,645 - free_text_explanation.py:348 - log - ERROR - stringify graph-892 failed! Error: No such file or directory: '/home/cli/nltk_data/corpora/stopwords/english'
+2026-01-17 21:44:23,645 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/145.pkl does not exists!
+2026-01-17 21:44:23,645 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/924.pkl does not exists!
+2026-01-17 21:44:23,645 - free_text_explanation.py:348 - log - ERROR - stringify graph-750 failed! Error: 
+2026-01-17 21:44:23,648 - free_text_explanation.py:348 - log - ERROR - stringify graph-782 failed! Error: 
+2026-01-17 21:44:23,650 - free_text_explanation.py:348 - log - ERROR - stringify graph-4 failed! Error: 
+2026-01-17 21:44:23,651 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/36.pkl does not exists!
+2026-01-17 21:44:23,651 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/68.pkl does not exists!
+2026-01-17 21:44:23,653 - free_text_explanation.py:348 - log - ERROR - stringify graph-30 failed! Error: Bad magic number for file header
+2026-01-17 21:44:23,654 - free_text_explanation.py:348 - log - ERROR - stringify graph-814 failed! Error: 
+2026-01-17 21:44:23,657 - free_text_explanation.py:348 - log - ERROR - stringify graph-846 failed! Error: 
+2026-01-17 21:44:23,662 - free_text_explanation.py:348 - log - ERROR - stringify graph-878 failed! Error: 
+2026-01-17 21:44:23,676 - free_text_explanation.py:348 - log - ERROR - stringify graph-910 failed! Error: 
+2026-01-17 21:44:23,684 - free_text_explanation.py:348 - log - ERROR - stringify graph-942 failed! Error: 
+2026-01-17 21:44:23,687 - free_text_explanation.py:348 - log - ERROR - stringify graph-974 failed! Error: 
+2026-01-17 21:44:23,687 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1006.pkl does not exists!
+2026-01-17 21:44:23,692 - free_text_explanation.py:348 - log - ERROR - stringify graph-1038 failed! Error: 
+2026-01-17 21:44:23,696 - free_text_explanation.py:348 - log - ERROR - stringify graph-1070 failed! Error: 
+2026-01-17 21:44:23,701 - free_text_explanation.py:348 - log - ERROR - stringify graph-1102 failed! Error: 
+2026-01-17 21:44:23,702 - free_text_explanation.py:348 - log - ERROR - stringify graph-1134 failed! Error: 
+2026-01-17 21:44:23,702 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1166.pkl does not exists!
+2026-01-17 21:44:23,704 - free_text_explanation.py:348 - log - ERROR - stringify graph-1198 failed! Error: 
+2026-01-17 21:44:23,709 - free_text_explanation.py:348 - log - ERROR - stringify graph-1230 failed! Error: 
+2026-01-17 21:44:23,709 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1262.pkl does not exists!
+2026-01-17 21:44:23,709 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1294.pkl does not exists!
+2026-01-17 21:44:23,709 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1326.pkl does not exists!
+2026-01-17 21:44:23,709 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1358.pkl does not exists!
+2026-01-17 21:44:23,713 - free_text_explanation.py:348 - log - ERROR - stringify graph-1390 failed! Error: 
+2026-01-17 21:44:23,714 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1422.pkl does not exists!
+2026-01-17 21:44:23,720 - free_text_explanation.py:348 - log - ERROR - stringify graph-1454 failed! Error: 
+2026-01-17 21:44:23,721 - free_text_explanation.py:348 - log - ERROR - stringify graph-1486 failed! Error: 
+2026-01-17 21:44:23,727 - free_text_explanation.py:348 - log - ERROR - stringify graph-1518 failed! Error: 
+2026-01-17 21:44:23,727 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1550.pkl does not exists!
+2026-01-17 21:44:23,729 - free_text_explanation.py:348 - log - ERROR - stringify graph-1582 failed! Error: 
+2026-01-17 21:44:23,729 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1614.pkl does not exists!
+2026-01-17 21:44:23,735 - free_text_explanation.py:348 - log - ERROR - stringify graph-1646 failed! Error: 
+2026-01-17 21:44:23,742 - free_text_explanation.py:348 - log - ERROR - stringify graph-1678 failed! Error: 
+2026-01-17 21:44:23,743 - free_text_explanation.py:348 - log - ERROR - stringify graph-1710 failed! Error: 
+2026-01-17 21:44:23,746 - free_text_explanation.py:348 - log - ERROR - stringify graph-1742 failed! Error: 
+2026-01-17 21:44:23,746 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/1774.pkl does not exists!
+2026-01-17 21:44:23,750 - free_text_explanation.py:348 - log - ERROR - stringify graph-1806 failed! Error: 
+2026-01-17 21:44:23,755 - free_text_explanation.py:348 - log - ERROR - stringify graph-1838 failed! Error: 
+2026-01-17 21:44:23,760 - free_text_explanation.py:348 - log - ERROR - stringify graph-1870 failed! Error: 
+2026-01-17 21:44:23,766 - free_text_explanation.py:348 - log - ERROR - stringify graph-1902 failed! Error: 
+2026-01-17 21:44:23,771 - free_text_explanation.py:348 - log - ERROR - stringify graph-1934 failed! Error: 
+2026-01-17 21:44:23,773 - free_text_explanation.py:348 - log - ERROR - stringify graph-1966 failed! Error: 
+2026-01-17 21:44:23,776 - free_text_explanation.py:348 - log - ERROR - stringify graph-1998 failed! Error: 
+2026-01-17 21:44:23,780 - free_text_explanation.py:348 - log - ERROR - stringify graph-2030 failed! Error: 
+2026-01-17 21:44:23,783 - free_text_explanation.py:348 - log - ERROR - stringify graph-2062 failed! Error: 
+2026-01-17 21:44:23,784 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2094.pkl does not exists!
+2026-01-17 21:44:23,788 - free_text_explanation.py:348 - log - ERROR - stringify graph-2126 failed! Error: 
+2026-01-17 21:44:23,793 - free_text_explanation.py:348 - log - ERROR - stringify graph-2158 failed! Error: 
+2026-01-17 21:44:23,803 - free_text_explanation.py:348 - log - ERROR - stringify graph-2190 failed! Error: 
+2026-01-17 21:44:23,809 - free_text_explanation.py:348 - log - ERROR - stringify graph-2222 failed! Error: 
+2026-01-17 21:44:23,809 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2254.pkl does not exists!
+2026-01-17 21:44:23,814 - free_text_explanation.py:348 - log - ERROR - stringify graph-2286 failed! Error: 
+2026-01-17 21:44:23,815 - free_text_explanation.py:348 - log - ERROR - stringify graph-2318 failed! Error: 
+2026-01-17 21:44:23,815 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2350.pkl does not exists!
+2026-01-17 21:44:23,820 - free_text_explanation.py:348 - log - ERROR - stringify graph-2382 failed! Error: 
+2026-01-17 21:44:23,821 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2414.pkl does not exists!
+2026-01-17 21:44:23,821 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2446.pkl does not exists!
+2026-01-17 21:44:23,821 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2478.pkl does not exists!
+2026-01-17 21:44:23,821 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2510.pkl does not exists!
+2026-01-17 21:44:23,821 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2542.pkl does not exists!
+2026-01-17 21:44:23,821 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2574.pkl does not exists!
+2026-01-17 21:44:23,821 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2606.pkl does not exists!
+2026-01-17 21:44:23,822 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2638.pkl does not exists!
+2026-01-17 21:44:23,822 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2670.pkl does not exists!
+2026-01-17 21:44:23,822 - free_text_explanation.py:337 - log - ERROR - outputs/pkls/2702.pkl does not exists!
+2026-01-17 21:44:40,426 - main.py:35 - log - INFO - All explanation generation processes finished.
+2026-01-17 21:50:07,168 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/15.pkl does not exists!
+2026-01-17 21:50:07,170 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/47.pkl does not exists!
+2026-01-17 21:50:07,296 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/27.pkl does not exists!
+2026-01-17 21:50:07,296 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/59.pkl does not exists!
+2026-01-17 21:50:07,301 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/29.pkl does not exists!
+2026-01-17 21:50:07,301 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/61.pkl does not exists!
+2026-01-17 21:50:07,324 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/0.pkl does not exists!
+2026-01-17 21:50:07,364 - free_text_explanation.py:348 - log - ERROR - outputs/pkls/9.pkl does not exists!
