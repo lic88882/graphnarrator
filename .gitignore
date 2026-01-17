@@ -9,3 +9,12 @@ logs/
 
 # Outputs files
 outputs/
+
+# Hugging Face cache
+.hf_cache/
+
+# vscode settings
+.vscode/
+
+# Python cache files
+__pycache__/

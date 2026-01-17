@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import regex as re
 import torch
-from openai import OpenAI
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from clm import CLM
 from log import logger
@@ -22,12 +22,39 @@ class XAIEvaluator:
     def __init__(
         self,
         device="cuda",
+        llm_model_id: str = "Qwen/Qwen2-7B-Instruct"
     ):
         self.MLM = None  # lazy initialization
         self.masker = "<mask>"
         self.device = device
+        
+        self.tokenizer = AutoTokenizer.from_pretrained(llm_model_id, trust_remote_code=True)
+        self.llm_model = AutoModelForCausalLM.from_pretrained(
+            llm_model_id,
+            torch_dtype=torch.float16,
+            device_map="auto",
+            trust_remote_code=True
+        )
 
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), base_url=os.getenv("OPENAI_BASE_URL"))
+    def _generate(self, prompt: str, max_tokens: int = 256) -> str:
+        """Generate text using Qwen model"""
+        messages = [{"role": "user", "content": prompt}]
+        text = self.tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        model_inputs = self.tokenizer(text, return_tensors="pt").to(self.llm_model.device)
+        
+        generated_ids = self.llm_model.generate(
+            **model_inputs,
+            max_new_tokens=max_tokens,
+            temperature=0.7,
+            do_sample=True
+        )
+        
+        response = self.tokenizer.batch_decode(
+            generated_ids, skip_special_tokens=True
+        )[0]
+        return response
 
     def initialize_mlm(self):
         if self.MLM is None:
@@ -111,27 +138,9 @@ class XAIEvaluator:
 
     def extract_keywords(self, text, method: Literal["LLM", "random"]):
         if method == "LLM":
-            # extract important keywords using LLM
-            completion = self.client.chat.completions.create(
-                model="gpt-4o-mini-2024-07-18",
-                messages=[
-                    {"role": "system", "content": "You are a helpful assistant."},
-                    {
-                        "role": "user",
-                        "content": f"Extract 25 key words from the following text. Choose non-stop words that carry significant meaning and best represent the overall content. Prioritize nouns, verbs, adjectives, and adverbs that capture the main ideas and themes. Provide only the list of 20 words, seperated by comma without explanations. <startoftext>{text}</startoftext>",
-                    },
-                ],
-                max_tokens=4095,
-                temperature=0.0,
-                top_p=0.95,
-            )
-
-            keywords = completion.choices[0].message.content
-            keywords = [k.lower() for k in keywords.split(", ")]
-        elif method == "random":
-            keywords = random.sample(text.split(), 25)
-
-        return keywords
+            prompt = f"Extract key concepts from: {text}"
+            response = self._generate(prompt, max_tokens=256)
+            return response
 
     def mlm_saliency(self, y_hat, S_M, E, M_S):
         saliency = 0

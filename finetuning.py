@@ -3,45 +3,59 @@ import time
 from pathlib import Path
 
 import pandas as pd
-from openai import OpenAI
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments
+from datasets import load_dataset
 
 from log import logger
 
 
-def self_training(exp_id, model_id, ft_prefix="graph") -> str:
-    # Upload training data
-    client = OpenAI()
-
-    # path to the .jsonl dataset for self-training
+def self_training(exp_id, model_id="Qwen/Qwen2-7B-Instruct", ft_prefix="graph") -> str:
+    """Fine-tune Qwen model locally"""
+    
     finetuning_file = Path(f"outputs/finetuning_jsonl/finetune-{exp_id}.jsonl")
-
-    # Upload training data
-    ft_file = client.files.create(file=open(finetuning_file, "rb"), purpose="fine-tune")
-
-    # initialize fine-tuning job
-    job = client.fine_tuning.jobs.create(
-        training_file=ft_file.id,
-        model=model_id,
-        seed=42,
-        suffix=f"{ft_prefix}-v{exp_id+1}",
-        hyperparameters={"n_epochs": 3},
+    
+    # Load dataset
+    dataset = load_dataset("json", data_files=str(finetuning_file), split="train")
+    
+    # Load model and tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        torch_dtype=torch.float16,
+        device_map="auto",
+        trust_remote_code=True
     )
-
-    while True:
-        # Retrieve the state of the fine-tune job
-        ft_state = client.fine_tuning.jobs.retrieve(job.id)
-
-        if ft_state.status == "succeeded":
-            ft_model_id = ft_state.fine_tuned_model
-            logger.info("Fine-tuned model: %s", ft_model_id)
-            return ft_model_id
-
-        if ft_state.status in ["failed", "cancelled"]:
-            raise Exception(f"Fine-tuning job {job.id} {ft_state.status}")  # pylint: disable=broad-exception-raised
-
-        else:
-            logger.info("finetuing status:%s (update every 15 secs)", ft_state.status)
-            job_events = client.fine_tuning.jobs.list_events(job.id, limit=1).data
-            logger.info("message:%s", job_events[0].message)
-
-        time.sleep(15)
+    
+    def preprocess_function(examples):
+        texts = [f"{ex['messages'][0]['content']}\n{ex['messages'][1]['content']}" for ex in examples["messages"]]
+        tokenized = tokenizer(texts, truncation=True, max_length=2048)
+        return tokenized
+    
+    dataset = dataset.map(preprocess_function, batched=True)
+    
+    output_dir = f"checkpoint/finetuned_{ft_prefix}_v{exp_id+1}"
+    
+    training_args = TrainingArguments(
+        output_dir=output_dir,
+        num_train_epochs=3,
+        per_device_train_batch_size=4,
+        gradient_accumulation_steps=4,
+        save_strategy="epoch",
+        seed=42,
+    )
+    
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=dataset,
+    )
+    
+    trainer.train()
+    
+    ft_model_id = f"{model_id}-finetuned-{ft_prefix}-v{exp_id+1}"
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
+    
+    logger.info("Fine-tuned model saved to: %s", output_dir)
+    return ft_model_id

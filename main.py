@@ -78,8 +78,8 @@ def manual(args):
 def auto(args):
     # -- auto mode -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, args.num_iterations):
@@ -94,8 +94,8 @@ def auto(args):
 def abl_sali(args):
     # -- ablation study for saliency -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, args.num_iterations):
@@ -110,8 +110,8 @@ def abl_sali(args):
 def abl_fait(args):
     # -- ablation study for fait -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, args.num_iterations):
@@ -126,8 +126,8 @@ def abl_fait(args):
 def abl_brev(args):
     # -- ablation study for brev -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, args.num_iterations):
@@ -142,8 +142,8 @@ def abl_brev(args):
 def sali(args):
     # -- saliency-concentrated improvement experiment -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, 5):
@@ -156,8 +156,8 @@ def sali(args):
 def brev(args):
     # -- brev-concentrated improvement experiment -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, 5):
@@ -170,8 +170,8 @@ def brev(args):
 def fait(args):
     # -- fait-concentrated improvement experiment -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, 5):
@@ -184,8 +184,8 @@ def fait(args):
 def rand(args):
     # --random nodes experiments -- #
     model_id = args.resume_model_id
-    assert (args.resume > 0 and args.resume_model_id != "gpt-4o-mini-2024-07-18") or (
-        args.resume == 0 and args.resume_model_id == "gpt-4o-mini-2024-07-18"
+    assert (args.resume > 0 and args.resume_model_id != "Qwen/Qwen2-7B-Instruct") or (
+        args.resume == 0 and args.resume_model_id == "Qwen/Qwen2-7B-Instruct"
     ), "Invalid model id!"
 
     for exp_id in range(args.resume, args.num_iterations):
@@ -230,7 +230,7 @@ def parse():
     parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument("--devices", nargs='+', type=str, default=["cuda:0", "cuda:1"], help="List of devices to use (e.g., cuda:0 cuda:1)")
     parser.add_argument("--resume", type=int, default=0)
-    parser.add_argument("--resume_model_id", type=str, default="gpt-4o-mini-2024-07-18")
+    parser.add_argument("--resume_model_id", type=str, default="Qwen/Qwen2-7B-Instruct", help="the model id to resume from")
     parser.add_argument("--mode", type=str, default="auto", required=True, help="the mode of the pipeline [auto;sali;manual]")
     
     parser.add_argument("--num_processes", type=int, default=32, help="Number of processes for explanation generation")

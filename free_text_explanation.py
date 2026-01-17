@@ -4,7 +4,8 @@ import time
 from pathlib import Path
 from typing import Literal, Union
 
-from openai import OpenAI
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from log import logger
 from tag import TAG
@@ -220,13 +221,42 @@ Node-2.4: title case based probability factoring bayesian belief networks abstra
 
 
 class FreeTextExpGenerator:
-    def __init__(self):
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), base_url=os.getenv("OPENAI_BASE_URL"))
+    def __init__(self, model_id: str = "Qwen/Qwen2-7B-Instruct"):
+        self.model_id = model_id
+        self.tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+        self.model = AutoModelForCausalLM.from_pretrained(
+            model_id,
+            torch_dtype=torch.float16,
+            device_map="auto",
+            trust_remote_code=True
+        )
+        
         self.example = None
         self.template = None
 
+    def _generate(self, prompt: str, max_tokens: int = 1024) -> str:
+        """Generate text using Qwen model"""
+        messages = [{"role": "user", "content": prompt}]
+        text = self.tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        model_inputs = self.tokenizer(text, return_tensors="pt").to(self.model.device)
+        
+        generated_ids = self.model.generate(
+            **model_inputs,
+            max_new_tokens=max_tokens,
+            temperature=0.7,
+            do_sample=True,
+            top_p=0.9
+        )
+        
+        response = self.tokenizer.batch_decode(
+            generated_ids, skip_special_tokens=True
+        )[0]
+        return response
+
     @staticmethod
-    def save(prompt, response, output_file, system_prompt="You are a helpful AI assistant.", style="OpenAI"):
+    def save(prompt, response, output_file, system_prompt="You are a helpful AI assistant.", style="Local"):
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(
                 {
@@ -275,7 +305,7 @@ class FreeTextExpGenerator:
                 max_tokens=4095,
                 messages=messages,
             )
-            response = completion.choices[0].message.content
+            response = self._generate(prompt, max_tokens=1024)
             return prompt, response
 
         else:
@@ -288,7 +318,7 @@ class FreeTextExpGenerator:
 
 
 def generate_explanations(indexs, model_id: str, exp_id: Union[int, str]):
-    generator = FreeTextExpGenerator()
+    generator = FreeTextExpGenerator(model_id=model_id)
 
     # input dir
     pkl_dir = Path("outputs/pkls/")
