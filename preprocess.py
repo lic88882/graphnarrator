@@ -35,13 +35,17 @@ def train(DATASET, ckpt_dir, SEED=42, LM_MODEL="bert-base-uncased", GNN_MODEL="S
     best_val_accuracy = 0
     best_model_state = model.state_dict()
 
+    # Create dataset-specific checkpoint directory
+    dataset_ckpt_dir = os.path.join(ckpt_dir, DATASET)
+    os.makedirs(dataset_ckpt_dir, exist_ok=True)
+
     # Try loading canonical best checkpoint if it exists
-    best_ckpt_path = f"{ckpt_dir}/GNN_dblp_seed_{SEED}.pt"
+    best_ckpt_path = f"{dataset_ckpt_dir}/GNN_{DATASET}_seed_{SEED}.pt"
 
     if os.path.exists(best_ckpt_path):
         print(f"[INFO] Loading existing checkpoint: {best_ckpt_path}")
         # load_from_ckpt
-        model.gnn.load_state_dict(torch.load(best_ckpt_path))
+        model.gnn.load_state_dict(torch.load(best_ckpt_path, weights_only=True))
         # Validation Loop
         model.eval()
         with torch.no_grad():
@@ -109,7 +113,7 @@ def train(DATASET, ckpt_dir, SEED=42, LM_MODEL="bert-base-uncased", GNN_MODEL="S
             end = time.time()
             # logger.info("GPU VRAM usage: %.2f GB", torch.cuda.memory_allocated() / 1024 / 1024 / 1024)
             logger.info(
-                "Epoch: %d, Step: %d, Sampled_Noeds: %d, Training loss: %.4f, Time: %.2fs",
+                "Epoch: %d, Step: %d, Sampled_Nodes: %d, Training loss: %.4f, Time: %.2fs",
                 epoch,
                 step,
                 len(batch.x),
@@ -142,13 +146,13 @@ def train(DATASET, ckpt_dir, SEED=42, LM_MODEL="bert-base-uncased", GNN_MODEL="S
             best_val_accuracy = accuracy
             best_model_state = model.state_dict()
 
-            # Save epoch-specific checkpoint
-            torch.save(model.gnn.state_dict(), f'{ckpt_dir}/GNN_dblp_seed_{SEED}_epoch_{epoch}.pt')
-
             # Save canonical best checkpoint
-            torch.save(model.gnn.state_dict(), f'{ckpt_dir}/GNN_dblp_seed_{SEED}.pt')
+            torch.save(model.gnn.state_dict(), f'{dataset_ckpt_dir}/GNN_{DATASET}_seed_{SEED}.pt')
             logger.info(f"New best model saved with accuracy: {best_val_accuracy}")
 
+        # Save epoch-specific checkpoint
+        torch.save(model.gnn.state_dict(), f'{dataset_ckpt_dir}/GNN_{DATASET}_seed_{SEED}_epoch_{epoch}.pt')
+        
         avg_train_loss = total_loss / step / BATCH_SIZE
         logger.info(f"Training loss: {avg_train_loss}")
 
@@ -198,7 +202,11 @@ def generate_dataset(SEED, LM_MODEL, GNN_MODEL, DATASET, args):
     # == Load Model ==
     model = LM_GNN_Joint_Model(lm_model_name=LM_MODEL, gnn_model_name=GNN_MODEL, out_dim=num_classes)
     model.to(args.device)
-    model.gnn.load_state_dict(torch.load(f"GNN_dblp_seed_{SEED}.pt"))
+
+    # Load checkpoint from dataset-specific directory
+    dataset_ckpt_dir = os.path.join(args.ckpt_dir, DATASET)
+    checkpoint_path = f"{dataset_ckpt_dir}/GNN_{DATASET}_seed_{SEED}.pt"
+    model.gnn.load_state_dict(torch.load(checkpoint_path),)
     model.eval()
 
     # == Load Optimizer ==
@@ -208,19 +216,23 @@ def generate_dataset(SEED, LM_MODEL, GNN_MODEL, DATASET, args):
     # == Explain ==
 
     def id2label(idx):
-        # cora dataset
-        # labels = [
-        #     "Case Based",  # 0
-        #     "Genetic Algorithms",  # 1
-        #     "Neural Networks",  # 2
-        #     "Probabilistic Methods",  # 3
-        #     "Reinforcement Learning",  # 4
-        #     "Rule Learning",  # 5
-        #     "Theory",  # 6
-        # ]
-
-        # dblp dataset
-        return data.label_dict[idx]
+        # CORA dataset label mapping
+        cora_labels = [
+            "Case Based",               # 0
+            "Genetic Algorithms",       # 1
+            "Neural Networks",          # 2
+            "Probabilistic Methods",    # 3
+            "Reinforcement Learning",   # 4
+            "Rule Learning",            # 5
+            "Theory",                   # 6
+        ]
+        
+        if DATASET == "cora":
+            return cora_labels[idx]
+        elif DATASET == "dblp":
+            return data.label_dict[idx]
+        else:
+            return str(idx)
 
     for index, batch in enumerate(subgraph_loader):
         if index >= 2500:
@@ -296,28 +308,38 @@ def generate_dataset(SEED, LM_MODEL, GNN_MODEL, DATASET, args):
 
 
 def compute_embeddings(batch_size, dataset):
-    if dataset == "DBLP":
+    dataset_lower = dataset.lower()
+    
+    if dataset_lower == "dblp":
         data, text, num_classes = DBLP.load()
+    elif dataset_lower == "cora":
+        data, text, num_classes = CORA.load()
+    elif dataset_lower == "book_history":
+        data, text, num_classes = BookHistory.load()
     else:
         print(f"{dataset} embedding is not yet implemented.")
-
+        return
+    
     encoder = Encoder()
     embs = []
     for i in range(0, len(text), batch_size):
         t = text[i : i + batch_size]
         embs.append(encoder.encode(t).detach().cpu())
-        print(i, torch.cuda.memory_allocated() / 1024 / 1024 / 1024)
+        print(f"Processed {i} texts, GPU VRAM: {torch.cuda.memory_allocated() / 1024 / 1024 / 1024:.2f} GB")
 
     x = torch.concat(embs, dim=0)
     data.x = x  # install embeddings into the PyG Dataset
     data.text = text  # plug nodes_text back
 
-    torch.save(data, "dataset/dblp_updated_w_emb.pt")
+    # Save to dataset-specific path
+    output_path = f"dataset/{dataset_lower}_updated_w_emb.pt"
+    torch.save(data, output_path)
+    print(f"[INFO] Embeddings saved to {output_path}")
 
 
 if __name__ == "__main__":
     # == train GNN models ==
-    train(DATASET="dblp", ckpt_dir="./checkpoint", SEED=42, LM_MODEL="bert-base-uncased", GNN_MODEL="SAGE")
+    train(DATASET="cora", ckpt_dir="./checkpoint", SEED=42, LM_MODEL="bert-base-uncased", GNN_MODEL="SAGE")
 
     # == save pkls ==
     # import argparse

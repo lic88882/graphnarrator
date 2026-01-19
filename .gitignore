@@ -7,6 +7,9 @@ checkpoint/
 # Logs directory
 logs/
 
+# Temporary files
+running.log
+
 # Outputs files
 outputs/
 

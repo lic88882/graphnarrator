@@ -240,6 +240,7 @@ def parse():
     parser.add_argument("--train_split", type=float, default=0.7, help="Training split ratio for random nodes")
     parser.add_argument("--val_split", type=float, default=0.1, help="Validation split ratio for random nodes")
     parser.add_argument("--test_split", type=float, default=0.2, help="Test split ratio for random nodes")
+    parser.add_argument("--ckpt_dir", type=str, default="./checkpoint", help="Directory to store model checkpoints")
     # fmt: on
     args = parser.parse_args()
 
