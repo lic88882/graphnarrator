@@ -22,7 +22,7 @@ class XAIEvaluator:
     def __init__(
         self,
         device="cuda",
-        llm_model_id: str = "Qwen/Qwen2-7B-Instruct"
+        llm_model_id: str = "Qwen/Qwen3-4B"
     ):
         self.MLM = None  # lazy initialization
         self.masker = "<mask>"

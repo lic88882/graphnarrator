@@ -6,7 +6,6 @@ from typing import Literal, Union
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from transformers import BitsAndBytesConfig
 
 from log import logger
 from tag import TAG
@@ -222,22 +221,13 @@ Node-2.4: title case based probability factoring bayesian belief networks abstra
 
 
 class FreeTextExpGenerator:
-    def __init__(self, model_id: str = "Qwen/Qwen2-7B-Instruct"):
+    def __init__(self, model_id: str = "Qwen/Qwen2.5-1.5B-Instruct"):
         self.model_id = model_id
         self.tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
 
-        # 4-bit quantization
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.bfloat16
-        )
-
         self.model = AutoModelForCausalLM.from_pretrained(
             model_id,
-            # torch_dtype=torch.float16,
-            quantization_config=bnb_config,
+            torch_dtype=torch.float16,
             device_map="auto",
             trust_remote_code=True
         )
@@ -340,6 +330,8 @@ class FreeTextExpGenerator:
 
 
 def generate_explanations(indexs, model_id: str, exp_id: Union[int, str]):
+    # TEMPORARY OVERRIDE: only process index 5
+    indexs = [5]
     generator = FreeTextExpGenerator(model_id=model_id)
 
     # input dir
