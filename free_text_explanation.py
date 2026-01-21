@@ -330,8 +330,6 @@ class FreeTextExpGenerator:
 
 
 def generate_explanations(indexs, model_id: str, exp_id: Union[int, str]):
-    # TEMPORARY OVERRIDE: only process index 5
-    indexs = [5]
     generator = FreeTextExpGenerator(model_id=model_id)
 
     # input dir

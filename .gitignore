@@ -21,3 +21,6 @@ outputs/
 
 # Python cache files
 __pycache__/
+
+# Tests files
+tests/
