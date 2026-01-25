@@ -22,7 +22,10 @@ outputs/pkls/
 # Python cache files
 __pycache__/
 models/__pycache__/
-models/GNN/__pycache__/
+models/GNNs/__pycache__/
+models/LMs/BERT_LRP/code/model/__pycache__/
+models/LMs/BERT_LRP/code/util/__pycache__/
 
 # Tests files
 tests/
+
