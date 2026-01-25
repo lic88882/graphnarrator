@@ -11,7 +11,7 @@ logs/
 running.log
 
 # Outputs files
-outputs/
+outputs/pkls/
 
 # Hugging Face cache
 .hf_cache/
@@ -21,6 +21,8 @@ outputs/
 
 # Python cache files
 __pycache__/
+models/__pycache__/
+models/GNN/__pycache__/
 
 # Tests files
 tests/
