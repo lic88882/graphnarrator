@@ -29,3 +29,5 @@ models/LMs/BERT_LRP/code/util/__pycache__/
 # Tests files
 tests/
 
+# NLTK data
+nltk_data/
