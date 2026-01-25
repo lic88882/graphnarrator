@@ -221,7 +221,7 @@ Node-2.4: title case based probability factoring bayesian belief networks abstra
 
 
 class FreeTextExpGenerator:
-    def __init__(self, model_id: str = "Qwen/Qwen2.5-1.5B-Instruct"):
+    def __init__(self, model_id: str = "Qwen/Qwen2.5-7B-Instruct"):
         self.model_id = model_id
         self.tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
 
